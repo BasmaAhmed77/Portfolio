@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Basma Ahmed | Backend Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top">Basma Ahmed</a>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <button class="icon-btn" id="theme" aria-label="Switch light or dark theme">Theme</button>
+      <button class="icon-btn" id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="nav">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Basma Ahmed</h1>
+      <p class="role">Backend Engineer in training</p>
+      <p>I build efficient, scalable server-side applications with clean architecture and well-designed databases. Computer Science student at Ain Shams University, based in Cairo.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="console" aria-label="Quick summary shown as a database query">
+      <div class="top"><i></i><i></i><i></i><span>basma.sql</span></div>
+      <div class="query" id="query" aria-live="off"></div>
+      <table class="result" id="result">
+        <tr><th>focus</th><th>stack</th></tr>
+        <tr><td>Backend</td><td>C#, ASP.NET MVC</td></tr>
+        <tr><td>Databases</td><td>SQL Server, Oracle</td></tr>
+        <tr><td>Languages</td><td>C++, Java, Python</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <h2>About me</h2>
+      <p>I am a motivated backend engineer who cares about clean architecture, optimized databases, and high-quality solutions.</p>
+      <p>I study design principles, design patterns, databases, and data structures with OSC ASU, and I put them into practice in projects: an ASP.NET MVC learning platform, a full Oracle database system, and a C++ supermarket backend.</p>
+      <p>Outside code I led the HR team at Project Zero, which taught me how to coordinate people and resolve conflict.</p>
+    </div>
+    <div class="facts">
+      <div class="fact"><small>Education</small><strong>B.Sc. Computer Science, expected 2028</strong></div>
+      <div class="fact"><small>Location</small><strong>Cairo, Egypt</strong></div>
+      <div class="fact"><small>Languages</small><strong>Arabic (native), English (B2)</strong></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-group"><h3>Programming</h3><div class="chips"><span class="chip">C++</span><span class="chip">C#</span><span class="chip">Java</span><span class="chip">Python</span><span class="chip">SQL</span><span class="chip basic">HTML (basic)</span><span class="chip basic">CSS (basic)</span></div></div>
+      <div class="skill-group"><h3>Tools and frameworks</h3><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Microsoft SQL Server</span><span class="chip basic">ASP.NET MVC (basic)</span></div></div>
+      <div class="skill-group"><h3>Concepts</h3><div class="chips"><span class="chip">OOP</span><span class="chip">Databases</span><span class="chip">Data Structures</span><span class="chip">Design Principles</span><span class="chip">Design Patterns</span><span class="chip">Problem Solving</span></div></div>
+      <div class="skill-group"><h3>Soft skills</h3><div class="chips"><span class="chip">Teamwork</span><span class="chip">Communication</span><span class="chip">Leadership</span><span class="chip">Time Management</span><span class="chip">Adaptability</span><span class="chip">Decision-Making</span><span class="chip">Conflict Resolution</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button aria-pressed="true" data-f="all">All</button>
+      <button aria-pressed="false" data-f="backend">Backend</button>
+      <button aria-pressed="false" data-f="database">Database</button>
+      <button aria-pressed="false" data-f="ml">Machine learning</button>
+      <button aria-pressed="false" data-f="iot">IoT</button>
+    </div>
+    <div class="projects">
+      <article class="project" data-c="backend database">
+        <h3>Learning Management System</h3>
+        <p>An LMS where instructors upload courses and students enroll online. Includes API integration, cloud image storage, authentication, and admin management on an MVC architecture. In progress.</p>
+        <div class="tags"><span>ASP.NET MVC</span><span>Entity Framework</span></div>
+      </article>
+      <article class="project" data-c="database">
+        <h3>Traffic E-Services</h3>
+        <p>A complete database system built from the ERD and mapping through DDL, DML, constraints, relationships, and normalization.</p>
+        <div class="tags"><span>SQL</span><span>Oracle DBMS</span></div>
+      </article>
+      <article class="project" data-c="backend">
+        <h3>Supermarket Management System</h3>
+        <p>Backend logic with file handling for products, users, and operations. Adds authentication, multi-role support, and a Qt GUI.</p>
+        <div class="tags"><span>C++</span><span>Qt</span></div>
+      </article>
+      <article class="project" data-c="ml">
+        <h3>Machine Learning Project</h3>
+        <p>Data preprocessing, cleaning, feature handling, and model training with Logistic Regression, SVM, Decision Tree, Random Forest, XGBoost, and LightGBM.</p>
+        <div class="tags"><span>Python</span><span>Machine Learning</span></div>
+      </article>
+      <article class="project" data-c="iot">
+        <h3>Competition Game</h3>
+        <p>A multiplayer race game with LEDs and buttons, using timing logic and real-time hardware responses.</p>
+        <div class="tags"><span>Arduino</span><span>Embedded</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience and training</h2>
+    <ol class="timeline">
+      <li><h3>OSC ASU, Science and Tech Committee</h3><span class="when">Oct 2025 to present</span><p>Studying design principles, design patterns, databases, and data structures through technical sessions and group learning.</p></li>
+      <li><h3>MSP ASU, Backend Committee</h3><span class="when">Oct 2025 to Feb 2026</span><p>Introduction to backend development with .NET Framework and Microsoft SQL Server.</p></li>
+      <li><h3>Project Zero, HR Head</h3><span class="when">Jun 2025 to Apr 2026</span><p>Managed team communication and task coordination, and resolved conflicts between members.</p></li>
+      <li><h3>Summer training, ICLUB ASU</h3><span class="when">Aug 2025</span><p>Frontend development with HTML, CSS, and JavaScript, including responsive pages.</p></li>
+      <li><h3>Robotech ASU, IoT Member</h3><span class="when">Feb 2025 to Sep 2025</span><p>Hardware and software integration with Arduino-based applications.</p></li>
+      <li><h3>ACM Student Chapter, Active Member</h3><span class="when">Oct 2024 to Feb 2026</span><p>Problem-solving sessions and competitive programming.</p></li>
+      <li><h3>ITI winter training, C# and SQL</h3><span class="when">Feb 2024, 60 hours</span><p>C# basics, OOP, SQL queries, and connecting applications to databases.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2>Education</h2>
+    <div class="edu">
+      <h3>Bachelor of Computer Science</h3>
+      <p style="margin:.4rem 0">Ain Shams University, expected graduation 2028</p>
+      <p style="color:var(--muted);margin:0">Coursework: Computer Organization and Architecture, Artificial Intelligence</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Let's work together</h2>
+    <p>I am open to internships and backend opportunities. Send me an email or connect on LinkedIn.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:BasmaAhmedSaid6@gmail.com">BasmaAhmedSaid6@gmail.com</a>
+      <a class="btn" href="https://linkedin.com/in/basma-ahmed-519080341" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="tel:+201094205765">+20 109 420 5765</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">Basma Ahmed, Cairo, Egypt</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
