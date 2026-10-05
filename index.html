@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basma Ahmed | Backend .NET Developer</title>
+<meta name="description" content="Basma Ahmed builds ASP.NET Core APIs and SQL Server databases for small businesses and startups. Computer Science student at Ain Shams University, Cairo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="logo">Basma Ahmed</a>
+    <nav id="nav" aria-label="Main">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#background">Background</a>
+      <a href="#contact" class="btn">Hire me</a>
+    </nav>
+    <div style="display:flex;gap:8px">
+      <button class="icon-btn" id="theme" aria-label="Switch light or dark theme">◐</button>
+      <button class="icon-btn menu" id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="status"><i></i> Open to freelance and internship work</div>
+      <h1>Backend developer building ASP.NET Core APIs.</h1>
+      <p class="usp">I help startups and small businesses launch reliable web back ends through clean APIs and well-designed SQL Server databases.</p>
+      <div class="cta">
+        <a class="btn" href="#projects">See my projects</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="console" aria-label="Live profile card styled as an API response">
+      <div class="tabs" role="tablist">
+        <button role="tab" aria-selected="true" data-ep="profile">/profile</button>
+        <button role="tab" aria-selected="false" data-ep="stack">/stack</button>
+        <button role="tab" aria-selected="false" data-ep="contact">/contact</button>
+      </div>
+      <div class="req"><span>GET</span> <b id="url">/api/basma/profile</b> <span>→ 200 OK</span></div>
+      <pre id="out"></pre>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="padding-top:24px">
+  <div class="wrap about-grid">
+    <div>
+      <h2>Backend work that stays easy to maintain</h2>
+      <p>I'm a Computer Science student at Ain Shams University who enjoys the part of a product users never see: the API, the data model, and the rules that keep both consistent.</p>
+      <p>Through DEPI's Full Stack .NET track and ITI training, I've built web apps with C#, ASP.NET Core, Entity Framework Core and SQL Server. I start with the database design, keep the code organised with MVC and clear layers, and explain my decisions in plain language so clients always know where their project stands.</p>
+      <p>I also lead people: I served as HR Head at Project Zero, so working with a team feels natural.</p>
+    </div>
+    <div class="facts">
+      <div><b>Based in</b>Cairo, Egypt</div>
+      <div><b>Studying</b>B.Sc. Computer Science, Ain Shams University (2028)</div>
+      <div><b>Currently</b>DEPI Full Stack .NET API track</div>
+      <div><b>Languages</b>Arabic (native), English (B2)</div>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="padding-top:24px">
+  <div class="wrap">
+    <h2>What I can build for you</h2>
+    <p class="lead">Small, clearly scoped back-end projects, delivered with working code and short documentation.</p>
+    <div class="services">
+      <div class="service"><h3>REST API development</h3><p>ASP.NET Core Web API with clear endpoints, validation, authentication and error handling that front-end or mobile apps can rely on.</p></div>
+      <div class="service"><h3>Database design</h3><p>ERD, normalisation and SQL Server schemas, plus queries and Entity Framework Core data access that stays fast and readable.</p></div>
+      <div class="service"><h3>Web apps with ASP.NET Core MVC</h3><p>Full sites with user accounts, roles, CRUD screens and admin areas, built on MVC architecture.</p></div>
+      <div class="service"><h3>Admin dashboards and back offices</h3><p>Tools that let your team manage products, users or courses without touching the database.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <p class="lead">What I use day to day on the DEPI and ITI projects.</p>
+    <div class="skill-rows">
+      <div class="skill-row"><h3>Back end</h3><div class="chips"><span>C#</span><span>ASP.NET Core Web API</span><span>ASP.NET Core MVC</span><span>RESTful APIs</span><span>CRUD</span></div></div>
+      <div class="skill-row"><h3>Data</h3><div class="chips"><span>SQL Server</span><span>Oracle</span><span>Entity Framework Core</span><span>LINQ</span><span>ERD and normalisation</span></div></div>
+      <div class="skill-row"><h3>Fundamentals</h3><div class="chips"><span>OOP</span><span>Data structures</span><span>Design principles</span><span>Design patterns</span><span>Problem solving</span></div></div>
+      <div class="skill-row"><h3>Tools</h3><div class="chips"><span>Git and GitHub</span><span>Visual Studio</span><span>SSMS</span><span>HTML and CSS (basic)</span><span>Python, Java, C++</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p class="lead">Each one started with a real requirement and ended with working software.</p>
+    <div class="projects">
+      <article class="project">
+        <div><h3>Learnova: Learning Management System</h3><div class="stack">ASP.NET MVC<br>Entity Framework<br>Cloud image storage</div></div>
+        <dl>
+          <div><dt>Problem</dt><dd>Instructors needed one place to publish courses and students needed an easy way to enrol online.</dd></div>
+          <div><dt>What I built</dt><dd>An LMS with authentication, course upload and enrolment, API integrations, cloud image storage and an admin area, all on MVC architecture.</dd></div>
+          <div><dt>Result</dt><dd>A relational database of 10+ tables and 10+ API endpoints powering courses, enrolment, authentication and admin management.</dd></div>
+        </dl>
+        <div class="links project-links"><a href="https://github.com/BasmaAhmed77/Learnova.git" target="_blank" rel="noopener">Source code on GitHub</a></div>
+      </article>
+      <article class="project">
+        <div><h3>Traffic E-Services Database</h3><div class="stack">SQL<br>Oracle DBMS<br>ERD</div></div>
+        <dl>
+          <div><dt>Problem</dt><dd>Traffic services need accurate, connected records for citizens, vehicles and licences.</dd></div>
+          <div><dt>What I built</dt><dd>A complete database, from ERD and mapping to DDL, DML, constraints, relationships and normalisation in Oracle.</dd></div>
+          <div><dt>Result</dt><dd>A normalised relational schema of 10+ tables with constraints and relationships.</dd></div>
+        </dl>
+        <div class="links project-links"><a href="https://github.com/malakhishams/Traffic-E-Services-Egyptian-Government-Portal.git" target="_blank" rel="noopener">Source code on GitHub</a></div>
+      </article>
+      <article class="project">
+        <div><h3>Supermarket Management System</h3><div class="stack">C++<br>File handling<br>Qt GUI</div></div>
+        <dl>
+          <div><dt>Problem</dt><dd>A store needed to manage products, users and daily operations with different permissions.</dd></div>
+          <div><dt>What I built</dt><dd>Back-end logic with file storage, authentication and multi-role support, connected to a Qt interface.</dd></div>
+        </dl>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="background" style="padding-top:24px">
+  <div class="wrap cols">
+    <div>
+      <h2>Training and education</h2>
+      <ul class="tl">
+        <li><small>2024 – 2028</small><h3>B.Sc. Computer Science, Ain Shams University</h3><p>OOP, data structures, databases, operating systems, system analysis and design.</p></li>
+        <li><small>Jul 2026 – Dec 2026</small><h3>DEPI, Full Stack .NET API</h3><p>ASP.NET Core Web API and MVC, SQL, EF Core and LINQ.</p></li>
+        <li><small>Aug 2026 – Sep 2026</small><h3>ITI Summer Training, ASP.NET Core MVC</h3><p>Web apps with EF Core, LINQ and Microsoft SQL Server.</p></li>
+        <li><small>Feb 2024</small><h3>ITI Winter Training, C# and SQL</h3><p>60 hours covering OOP and database operations.</p></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Community and leadership</h2>
+      <ul class="tl">
+        <li><small>Jun 2025 – Apr 2026</small><h3>HR Head, Project Zero</h3><p>Coordinated tasks and communication across the team and resolved conflicts.</p></li>
+        <li><small>Oct 2025 – Present</small><h3>Open Source Community ASU</h3><p>Design principles, design patterns and databases through technical sessions.</p></li>
+        <li><small>Oct 2025 – Feb 2026</small><h3>MSP ASU, Backend Committee</h3><p>Back-end basics with .NET Framework and SQL Server.</p></li>
+        <li><small>Oct 2024 – Feb 2026</small><h3>ACM Student Chapter</h3><p>Competitive programming and problem-solving sessions.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Have a back end to build?</h2>
+    <p>Tell me what you need and I'll reply with questions, a rough plan and a timeline.</p>
+    <div class="cta">
+      <a class="btn" href="mailto:basmaahmedsaid6@gmail.com?subject=Project%20inquiry">Email me</a>
+      <button class="btn ghost" id="copy" type="button">Copy email address</button>
+      <a class="btn ghost" href="https://wa.me/201094205765" target="_blank" rel="noopener" aria-label="Chat on WhatsApp: +20 1094205765">WhatsApp +20 1094205765</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/basmaahmed1" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/BasmaAhmed77" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">© <span id="yr"></span> Basma Ahmed · Cairo, Egypt</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
